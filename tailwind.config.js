@@ -20,8 +20,13 @@ export default {
         aurora :"aurora 60s linear infinite",
         shimmer:"shimmer 2s linear infinite",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        zoomInOut: "zoomInOut 5s infinite",
       },
       keyframes:{
+        zoomInOut: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.5)' },
+        },
         scroll:{
           to:{
             transform: "translate(calc(-50% - 0.5rem))"
